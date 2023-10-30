@@ -1,0 +1,143 @@
+Questão 1
+
+Responda as perguntas abaixo:
+
+    1. O que é NVM?
+        => NVM é a sigla para (Node Version Manager).
+        É uma ferramenta que facilita a gestão de várias versões do Node.js em meu sistema.
+        Node.js é uma plataforma de tempo de execução de JavaScript que é frequentemente usada
+        para desenvolvimento de aplicativos web e servidores.
+    2.
+        a. O que é NPM e para que o utilizamos?
+           => É uma ferramenta fundamental para o desenvolvimento em Node.js, tornando o gerenciamento
+           de pacotes e dependências mais eficiente que simplifa o processo de construção de
+           aplicativos e serviços web com JavaScript.
+
+        b. O que o comando "npm install prompt-sync" realiza?
+           => Instala um pacote chamado prompt-sync no projeto Node.js em questão. Esse pacote é
+           utilizado para receber entrada do usuário de forma síncrona e que aguarda a resposta
+           do usuário antes de continuar a execução do código. 
+
+        c. Em qual diretório devemos instalar uma biblioteca javascript?
+           => No diretório que está o arquivo .js que se está programando. 
+    
+    3. Existe diferença entre o código que cria e o que faz uso de uma variável em python?
+    Se sim explique essa diferença.
+       =>  Sim existe uma diferença fundamental que cria uma variável e o código que faz
+       uso dela em python.
+
+       Criação em python seria:
+            => nome = 'Hilário'
+            => idade = 53
+
+       Utilização em python seria:
+            => print(f'Meu nome é {nome} e minha idade é {idade} anos.')
+    
+    4. Existe diferença entre o código que cria e o que faz uso de uma variável em javascript?
+    Se sim explique essa diferença.
+       => Sim existe uma diferença entre o código que cria uma variável e o código que faz uso dela.
+
+       Criação em JavaScript seria:
+            => var nome;
+            => let idade;
+            => const PI = 3.1415927;
+
+       Uso em JavaScript seria:
+            => nome = 'Hilário';
+            => idade = 53;
+            => console.log('Meu nome é ' + nome + 'e minha idade é ' + idade + '.');
+            => console.log('A constante PI = ' + PI);
+
+
+
+Questão 2
+
+Explique as diferenças e especificidades de variáveis criadas com os comandos:
+
+    const => A variável quando declarada é constante,
+    ou seja, assim que declarada ela não poderá ser alterada.
+
+    var => A variável quando declarada tem escopo de função ou global (quando declarada fora
+    da função). Elas são 'hoisted' que significa que são elevadas ao topo de sua função ou
+    escopo e podem ser usadas antes de serem declaradas.
+
+    let => A variável quando declarada tem escopo de bloco, o que a torna mais previsível
+    e segura do que a variável var. Ela só é visível dentro do bloco em que foram declaradas.
+
+    * Use const para valores que não devem ser reatribuídos.
+    * Use let para variáveis que precisam ser reatribuídas e têm escopo de bloco.
+    * Evite o uso de var, pois ele pode levar a problemas de escopo e hoisting não intuitivos.
+      Prefira let ou const para uma declaração mais previsível de variáveis.
+
+
+Questão 3
+
+Diga o que será impresso na tela após executar cada um dos códigos abaixo:
+
+var x = 5;
+
+function fun() {
+    var x = 6;
+    console.log(x);
+
+}
+
+console.log(x);
+
+=> A única resposta esperada é a impressão da variável x do escopo global,
+   pois a função não foi chamada para execução.
+
+let x = 5;
+
+function fun() {
+    let x = 6;
+    console.log(x);
+
+}
+
+console.log(x);
+
+=> A única resposta esperada é a impressão da variável x do escopo de bloco,
+   pois a função não foi chamada para execução.
+
+
+Questão 4
+
+É possível editar o valor de uma variável (const), de uma lista (const) ou
+de um objeto (const)?
+
+const list = [1, 2, 3];
+list = [4, 5, 6];
+
+=> Nesse caso NÃO é possível alterar a variável list porque ela é constante. Invariável.
+   Não pode ser reatribuídas. No entranto o valor dentro do array pode ser modificado,
+   pois os elementos dentro dela não são constantes. 
+
+const pessoa = {nome: 'João', idade: 18};
+pessoa.nome = 'Maria'; => É permitido, pois modifica-se uma propriedade do objeto.
+pessoa.idade = 20; => É permitido, pois modifica-se uma propriedade do objeto.
+
+=> Nesse caso SIM é possível modificar o objeto dentro da variável pessoa, mas não
+   a variável pessoa em si. As propriedades do objeto podem ser modificadas. 
+
+const PI = 3.1415;
+PI = 3.14;
+
+=> Nesse caso NÃO é possível alterar a variável PI, pois ela é constante. As variáveis
+   declaradas com const NÃO podem ser reatribuídas.
+
+
+
+Questão 5
+
+Escreva um código criando uma função em javascript de maneira convencional e armazenando
+uma função em uma constante nomeada (variável constante)
+
+function saudacao(nome) {
+    return 'Olá, ' + nome + '!';
+
+}
+
+const mensagem = saudacao('Hilário');
+
+console.log(mensagem);
