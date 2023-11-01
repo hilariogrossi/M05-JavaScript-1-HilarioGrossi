@@ -1,34 +1,3 @@
-/* Questão 3
-
-Faça um programa que desenha um retângulo de altura "a" e largura "l" usando asteriscos. O usuário deve informar os valores de "a" e "l", que devem ser maiores que zero e tais que l > a. Note que o seu programa deve garantir que os valores digitados sejam válidos, forçando entradas válidas. O programa também deve perguntar se o usuário gostaria de gerar um retângulo antes de fazer cada impressão. O programa termina assim que o usuário responder "n" à pergunta.
-Exemplo de execução:
-
-Informe se deseja imprimir um retângulo (s/n): s
-Informe a altura do retângulo: 10
-Informe a largura do retângulo: 8
-Entrada inválida.
-Informe a altura do retângulo: 10
-Informe a largura do retângulo: 20
-********************
-********************
-********************
-********************
-********************
-********************
-********************
-********************
-********************
-********************
-Informe se deseja imprimir outro retângulo (s/n): s
-Informe a altura do retângulo: 5
-Informe a largura do retângulo: 6
-******
-******
-******
-******
-******
-Informe se deseja imprimir outro retângulo (s/n): n */
-
 const prompt = require('prompt-sync')();
 
 function retangulo(altura, largura) {
