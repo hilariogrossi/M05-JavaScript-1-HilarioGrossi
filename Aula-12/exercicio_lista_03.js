@@ -3,8 +3,8 @@ const prompt = require('prompt-sync')();
 function retangulo(altura, largura) {
     let resultado = '';
 
-    for (let i = 0; i < largura; i++) {
-        for (let j = 0; j < altura; j++) {
+    for (let i = 0; i < altura; i++) {
+        for (let j = 0; j < largura; j++) {
             resultado += '*';
 
         }
@@ -32,7 +32,7 @@ while (imprimir = 's') {
         largura = parseInt(prompt("Informe a largura do retângulo: "));
 
         if (largura > altura) {
-            console.log(retangulo(largura, altura))
+            console.log(retangulo(altura, largura))
         
         } else {
             console.log('\nEntrada inválida!\n')
