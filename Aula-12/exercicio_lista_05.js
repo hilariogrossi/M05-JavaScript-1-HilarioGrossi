@@ -1,6 +1,6 @@
 const prompt = require('prompt-sync')();
 
-const texto = prompt("Digite um texto: ");
+const texto = prompt("Digite o texto a ser invertido: ");
 
 let textoInvertido = "";
 
