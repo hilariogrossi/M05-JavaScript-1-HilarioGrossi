@@ -15,7 +15,7 @@ while (number != 0) {
         break;
 
     } else if (numero == 0 && contador == 0) {
-        console.log('\nNenhum número soi digitado!\n')
+        console.log('\nNenhum número foi digitado!\n')
         break;
 
     }
