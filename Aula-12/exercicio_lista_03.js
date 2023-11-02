@@ -3,9 +3,9 @@ const prompt = require('prompt-sync')();
 function retangulo(altura, largura) {
     let resultado = '';
 
-    for (let i = 0; i < altura; i++) {
+    for (let i = 0; i < largura; i++) {
         //linha += '*'.repeat(largura) + '\n'; e não precisaria do for abaixo
-        for (let j = 0; j < largura; j++) {
+        for (let j = 0; j < altura; j++) {
             resultado += '*';
 
         }
